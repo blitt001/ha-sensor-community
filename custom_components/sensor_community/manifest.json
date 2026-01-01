@@ -1,0 +1,14 @@
+{
+  "domain": "sensor_community",
+  "name": "Sensor.Community",
+  "codeowners": ["@blitt001"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/blitt001/ha-sensor-community",
+  "homeassistant": "2024.1.0",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/blitt001/ha-sensor-community/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

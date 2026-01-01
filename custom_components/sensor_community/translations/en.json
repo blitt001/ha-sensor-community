@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sensor.Community Configuration",
+        "description": "Enter your Sensor.Community sensor ID. This is typically in the format 'esp8266-12345678' or similar (e.g., {example}).",
+        "data": {
+          "sensor_id": "Sensor ID"
+        }
+      },
+      "sensors": {
+        "title": "Configure Sensors",
+        "description": "Map your Home Assistant sensors to Sensor.Community values. Configure at least one sensor.",
+        "data": {
+          "sensor_pm25": "PM2.5 Sensor",
+          "sensor_pm10": "PM10 Sensor",
+          "sensor_temperature": "Temperature Sensor",
+          "sensor_humidity": "Humidity Sensor",
+          "sensor_pressure": "Pressure Sensor (hPa)"
+        }
+      },
+      "options": {
+        "title": "Options",
+        "description": "Configure upload settings. The recommended interval is 150 seconds (2.5 minutes) as per Sensor.Community guidelines.",
+        "data": {
+          "update_interval": "Update Interval (seconds)",
+          "debug_mode": "Enable Debug Mode"
+        }
+      }
+    },
+    "error": {
+      "invalid_sensor_id": "Invalid sensor ID format. Please use format like 'esp8266-12345678'.",
+      "no_sensor_configured": "Please configure at least one sensor."
+    },
+    "abort": {
+      "already_configured": "This sensor ID is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Sensor.Community Options",
+        "description": "Update your sensor mappings and settings.",
+        "data": {
+          "sensor_pm25": "PM2.5 Sensor",
+          "sensor_pm10": "PM10 Sensor",
+          "sensor_temperature": "Temperature Sensor",
+          "sensor_humidity": "Humidity Sensor",
+          "sensor_pressure": "Pressure Sensor (hPa)",
+          "update_interval": "Update Interval (seconds)",
+          "debug_mode": "Enable Debug Mode"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "pending": "Pending",
+          "ok": "OK",
+          "error": "Error"
+        }
+      }
+    }
+  }
+}
