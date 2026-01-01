@@ -1,13 +1,27 @@
 # Sensor.Community Uploader for Home Assistant
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+<!-- Badges -->
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 [![GitHub Release](https://img.shields.io/github/v/release/blitt001/ha-sensor-community)](https://github.com/blitt001/ha-sensor-community/releases)
+[![GitHub License](https://img.shields.io/github/license/blitt001/ha-sensor-community)](LICENSE)
+[![GitHub Downloads](https://img.shields.io/github/downloads/blitt001/ha-sensor-community/total)](https://github.com/blitt001/ha-sensor-community/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/blitt001/ha-sensor-community)](https://github.com/blitt001/ha-sensor-community/stargazers)
+
+<!-- TODO: Add logo/banner image
+![Sensor.Community Logo](images/logo.png)
+-->
 
 **Upload** your weather station and air quality data from Home Assistant to the [Sensor.Community](https://sensor.community/) citizen science network (formerly Luftdaten).
 
 This integration allows you to contribute measurements from your personal weather station or environmental sensors (temperature, humidity, pressure, PM2.5, PM10) to the global Sensor.Community network - without needing dedicated hardware like an ESP8266.
 
 > **Note:** This integration **uploads** data TO Sensor.Community. It is different from the built-in Home Assistant `luftdaten` integration which only **reads** data FROM the network.
+
+<!-- TODO: Add screenshot of the integration
+## Screenshot
+
+![Configuration Flow](images/screenshot.png)
+-->
 
 ## Features
 
@@ -33,6 +47,10 @@ The integration automatically sends PM data with `X-Pin: 1` and environmental da
 
 ### HACS (Recommended)
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=blitt001&repo=ha-sensor-community&category=integration)
+
+Click the button above, or manually:
+
 1. Open HACS in Home Assistant
 2. Go to **Integrations**
 3. Click the three dots menu and select **Custom repositories**
@@ -48,6 +66,10 @@ The integration automatically sends PM data with `X-Pin: 1` and environmental da
 3. Restart Home Assistant
 
 ## Configuration
+
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=sensor_community)
+
+Click the button above, or manually:
 
 1. Go to **Settings** > **Devices & Services**
 2. Click **Add Integration**
@@ -223,6 +245,24 @@ The sensor ID must be in the format `prefix-id`, for example:
 - `esp8266-12345678`
 - `raspi-abcdef123456`
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## License
 
-MIT License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<!-- TODO: Add support/donation link
+## Support
+
+If you find this integration useful, consider buying me a coffee:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-donate-yellow.svg)](https://buymeacoffee.com/YOUR_USERNAME)
+-->
